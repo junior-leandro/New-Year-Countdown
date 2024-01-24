@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="countdown">
+
+    <div class="tema">
+      <input type="checkbox" id="checkbox" class="checkbox">
+      <label class="label" for="checkbox">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <section class="countdown" id="countdown">
       <span class="title">New Year Countdown</span>
       <div class="box">
         <span class="value" data-days>00</span>
@@ -25,7 +35,9 @@
         <span class="value" data-seconds>00</span>
         <span class="name">seconds</span>
       </div>
-    </div>
-    <script src="app.js" defer></script>
+    </section>
+    <script src="app.js"></script>
+    <script src="theme.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
   </body>
 </html>
