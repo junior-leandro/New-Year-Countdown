@@ -20,15 +20,10 @@ const countdown = () => {
 
     const timeLeft = targetDate - now; // result in ms
 
-
-    const days = 365
-    const hours = 23
-    const minutes = 59
-    const seconds = 59
-
-    /* 
-    FALTANDO FAZER OS CALCULOS PARA CONVERTER MS EM DIAS, HORAS, MINUTOS E SEGUNDOS 
-    */
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     render(days, hours, minutes, seconds)
 };
