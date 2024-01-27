@@ -6,7 +6,7 @@ Além disso, temos a opção de tema para claro e escuro, através de um botão 
 
 ## Demonstração
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./screenshot.gif)
 ## Aprendizados
 
 Neste projeto usei JavaScript para obter a data atual do computador, usei o método de instância getFullYear() do objeto Date. O método getFullYear() retorna o ano da data especificada no construtor de Date. O objeto Date contém um Number representado em milissegundos.
